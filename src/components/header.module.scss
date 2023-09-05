@@ -1,8 +1,8 @@
 .headerContainer {
-	padding: 1% 5%;
+	padding: 11px 50px; //overall height = 69.6 px
 	border: 1px red solid;
 	.headerContentCon {
-		// border: 1px red solid;
+		border: 1px red solid;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;

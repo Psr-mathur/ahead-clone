@@ -97,7 +97,8 @@
 				}
 			}
 		}
-		.box_2 {
+		.box_2,
+		.box_6 {
 			padding: 100px 0;
 			display: flex;
 			align-items: self-start;
@@ -264,6 +265,176 @@
 					flex-direction: column;
 					justify-content: flex-start;
 					gap: 40px;
+				}
+			}
+		}
+		.box_7 {
+			margin: 75px 0;
+			padding: 25px 0;
+			height: calc(100vh - 125px);
+			width: 100%;
+			background-color: #ebf8fe;
+			border-radius: 25px;
+			border: 1px greenyellow solid;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 20px;
+			& > :first-child {
+				font-weight: 500;
+			}
+			& > :nth-child(2) {
+				// EverWondered...
+				word-spacing: 5px;
+				font-weight: bold;
+				font-size: 42px;
+			}
+			& > :nth-child(3),
+			& > :nth-child(4) {
+				// 1,2,3 answer_qns Con
+
+				width: 100%;
+				padding: 0 20%;
+				padding-bottom: 50px; // just for absolute texts
+				margin: 50px 0;
+				// border: 1px rgb(247, 0, 255) solid;
+				// position: relative;
+				& > div {
+					// border: 1px rgb(247, 0, 255) solid;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					position: relative;
+
+					.dotline {
+						position: absolute;
+						border: 2px #f2e4b6 dashed;
+						left: 0;
+						right: 0;
+						top: 49%;
+					}
+					& > :nth-child(2),
+					& > :nth-child(3),
+					& > :nth-child(4),
+					& > :nth-child(5) {
+						height: 40px;
+						width: 40px;
+						// clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: white;
+						background-color: #eac13c;
+						z-index: 9;
+						&::after {
+							display: block;
+							width: 325px;
+							text-align: center;
+							// background-color: purple;
+							position: absolute;
+							color: black;
+							top: 50px;
+							z-index: 99;
+						}
+					}
+					& > :nth-child(2) {
+						// 1
+						&::after {
+							content: "Answer questions on your social skills.";
+						}
+					}
+					& > :nth-child(3) {
+						// 2
+						&::after {
+							content: "Let others anonymously answer the same questions about you.";
+						}
+					}
+					& > :nth-child(4) {
+						// 3
+						&::after {
+							content: "Find out where you and others see things the same way - and where not!";
+						}
+					}
+				}
+			}
+			& > :nth-child(4) {
+				// colourful anonymus1,2 ..
+				padding: 0 25%;
+				& > div {
+					padding: 100px 0;
+					background-color: white;
+					border-radius: 16px;
+					position: relative;
+					.solidline {
+						position: absolute;
+						border: 1px lightslategrey solid;
+						left: 0;
+						right: 0;
+						top: 49%;
+					}
+					& > :nth-child(2),
+					& > :nth-child(3),
+					& > :nth-child(4),
+					& > :nth-child(5) {
+						height: 20px;
+						width: 20px;
+						// display: block; // enemy
+						&::after {
+							display: inline-block;
+							text-align: center;
+							width: max-content;
+							// background-color: purple;
+							position: absolute;
+							color: white;
+							z-index: 99;
+							padding: 10px 15px;
+							border-radius: 16px;
+						}
+					}
+					& > :nth-child(2) {
+						// 1
+						background-color: #6341ef;
+						&::after {
+							content: "You";
+							top: 25%;
+							// left: -170px;
+							// right: 100px;
+							background-color: #6341ef;
+						}
+					}
+					& > :nth-child(3) {
+						// 2
+						background-color: #40c3ff;
+						&::after {
+							content: "Anonymonus 1";
+							top: 58%;
+							// left: 120px;
+							background-color: #40c3ff;
+						}
+					}
+					& > :nth-child(4) {
+						// 3
+						background-color: #fdb238;
+						&::after {
+							content: "Anonymonus 2";
+							top: 25%;
+							// left: 0px;
+							// right: 30px;
+							background-color: #fdb238;
+						}
+					}
+					& > :nth-child(5) {
+						// 3
+						background-color: rgb(139, 243, 139);
+						&::after {
+							background-color: rgb(139, 243, 139);
+							content: "Anonymonus 3";
+							top: 58%;
+							// right: -200px;
+						}
+					}
 				}
 			}
 		}

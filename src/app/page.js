@@ -124,6 +124,47 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+				<div className={styles.box_6}>
+					<div>
+						<p>Be the best you with EQ</p>
+					</div>
+					<div>
+						<p>
+							Not having your own emotions under control might be
+							holding you back.
+						</p>
+					</div>
+					<div>
+						<p>
+							Additionaly, not understanding those of others stops
+							you from being parent, friend you can be.
+						</p>
+					</div>
+				</div>
+				<div className={styles.box_7}>
+					<p>
+						Let your friend, family and co-workers (anonymously)
+						rate your social skills.
+					</p>
+					<p>Ever wondered what others think of you?</p>
+					<div>
+						<div>
+							<div className={styles.dotline}></div>
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div className={styles.solidline}></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

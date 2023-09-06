@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./page.module.scss";
 import Image from "next/image";
+import Card from "@/components/card";
 
 const apple_img_url =
 	"https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png";
@@ -66,7 +67,15 @@ const Home = () => {
 					</div>
 					<div>
 						<div>
-							<div>cards</div>
+							<Card />
+							<Card />
+							<Card />
+							<Card />
+							<Card />
+							<Card />
+							<Card />
+							<Card />
+							<Card />
 						</div>
 					</div>
 				</div>

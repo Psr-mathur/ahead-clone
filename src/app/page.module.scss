@@ -102,6 +102,7 @@
 			display: flex;
 			align-items: self-start;
 			justify-content: space-between;
+			gap: 10px;
 			& > div {
 				flex: 1;
 				display: flex;
@@ -126,7 +127,7 @@
 			}
 		}
 		.box_3 {
-			border: 1px red solid;
+			// border: 1px red solid;
 			& > :nth-child(1) {
 				//header
 				p {
@@ -136,13 +137,19 @@
 				}
 			}
 			& > :nth-child(2) {
-				//content
+				//cards_
+				// border: 1px purple solid;
+				padding: 20px 0;
 				& > div {
-					padding: 20px 0;
-					& > div {
-						//cards scroll container
-						height: 200px;
-						background: plum;
+					//cards scroll container
+					height: 240px;
+					// background: plum;
+					display: flex;
+					align-items: center;
+					gap: 25px;
+					overflow-x: scroll;
+					&::-webkit-scrollbar {
+						display: none;
 					}
 				}
 			}

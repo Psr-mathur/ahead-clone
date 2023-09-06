@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page.module.scss";
 import Image from "next/image";
 import Card from "@/components/card";
+import SIpoint from "@/components/sipoint";
 
 const apple_img_url =
 	"https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png";
@@ -76,6 +77,50 @@ const Home = () => {
 							<Card />
 							<Card />
 							<Card />
+						</div>
+					</div>
+				</div>
+				<div className={styles.box_4}>
+					<div>
+						<div>
+							<p>Built out of frustation</p>
+							<p>Meet the ahead app</p>
+							<div>floater</div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus eos, quod dolorem
+								nihil vitae harum excepturi ratione reiciendis
+								dignissimos illo eius adipisci totam molestias?
+							</p>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptatibus eos, quod
+								dolorem.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div className={styles.box_5}>
+					<div>
+						<p>
+							Wrong with self-improvement & how we're fixing it.
+						</p>
+						<p>Self-improvement. Ugh.</p>
+					</div>
+					<div>
+						<div className={styles.line}></div>
+						<div className={styles.points}>
+							<SIpoint />
+							<SIpoint />
+							<SIpoint />
+							<SIpoint />
+							<SIpoint />
+							<SIpoint />
+							<SIpoint />
 						</div>
 					</div>
 				</div>

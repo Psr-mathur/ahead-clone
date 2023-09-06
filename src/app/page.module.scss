@@ -154,5 +154,118 @@
 				}
 			}
 		}
+		.box_4 {
+			margin: 75px 0;
+			display: flex;
+			height: calc(100vh - 125px);
+			width: 100%;
+			background-color: #eeeafd;
+			border-radius: 25px;
+			border: 1px greenyellow solid;
+			& > div {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+			}
+			& > :first-child {
+				// left
+				width: 50%;
+				padding: 25px;
+				& > div {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					gap: 20px;
+					border: 1px red solid;
+					& > * {
+						width: 100%;
+					}
+					& > :first-child {
+						// built_out_of.. text
+						font-weight: 400;
+					}
+					& > :nth-child(2) {
+						// meet_the_app text
+						font-weight: bold;
+						font-size: 36px;
+						letter-spacing: 2px;
+						word-spacing: 5px;
+					}
+					& > :last-child {
+						// floating circle
+						height: 40vh;
+						border: 1px plum solid;
+					}
+				}
+			}
+			& > :last-child {
+				// right
+				width: 50%;
+				padding: 25px;
+				border: 1px red solid;
+				& > div {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					gap: 25px;
+					max-width: 75%;
+					border: 1px red solid;
+					P {
+						border: 1px red solid;
+						width: 100%;
+						font-size: 16px;
+						line-height: 24px;
+						word-spacing: 4px;
+						text-justify: distribute;
+					}
+				}
+			}
+		}
+		.box_5 {
+			margin: 75px 0;
+			height: calc(100vh - 125px);
+			width: 100%;
+			border-radius: 25px;
+			border: 1px salmon solid;
+			& > :first-child {
+				// header_para con
+				padding: 10px 8%;
+				// border: 1px rgb(17, 0, 255) solid;
+				& > :last-child {
+					// self_impr para
+					font-size: 32px;
+					font-weight: bold;
+					padding-top: 25px;
+				}
+			}
+			& > :last-child {
+				// scroll_container
+				padding: 25px 20%;
+				// border: 1px rgb(17, 0, 255) solid;
+				.line {
+					width: 2px;
+					height: calc(100vh - 300px);
+					background-color: #7756fd;
+					position: absolute;
+					left: 23%;
+				}
+				.points {
+					position: relative;
+					// border: 1px rgb(17, 0, 255) solid;
+					height: calc(100vh - 300px);
+					overflow-y: scroll;
+					padding-left: 50px;
+					&::-webkit-scrollbar {
+						display: none;
+					}
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					gap: 40px;
+				}
+			}
+		}
 	}
 }

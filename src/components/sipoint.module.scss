@@ -1,0 +1,25 @@
+.sipointCon {
+	// padding-left: 40px;
+	&::before {
+		content: "";
+		display: block;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		background-color: #6c49fc;
+		position: absolute;
+		left: 11px;
+		z-index: 99;
+	}
+	max-width: 650px;
+	& > :first-child {
+		// title
+		font-weight: 600;
+		padding-bottom: 15px;
+	}
+	& > :last-child {
+		// desc
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

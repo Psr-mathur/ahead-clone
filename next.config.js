@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-const withSass = require("@zeit/next-sass");
+const path = require("path");
 
-module.exports = withSass({
-	/* Your other Next.js config options */
-});
+module.exports = {
+	sassOptions: {
+		includePaths: [path.join(__dirname, "styles")],
+	},
+};
 
 const nextConfig = {
 	images: {

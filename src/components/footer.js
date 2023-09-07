@@ -10,7 +10,7 @@ const Footer = () => {
 		<div className={styles.footerCon}>
 			<div>
 				<div>
-					<h1>DE</h1>
+					<h1>&#128125;</h1>
 					<span>ahead</span>
 				</div>
 				<div>

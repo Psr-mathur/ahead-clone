@@ -2,7 +2,7 @@ import styles from "./card.module.scss";
 
 const Card = ({
 	emoji = "&#128513;",
-	title = "This is title",
+	title = "Where is title?",
 	desc = `Lorem ipsum dolor, sit amet consectetur 
             adipi elit. Impedit beatae deserunt 
             aperiam mollitia maiores.`,

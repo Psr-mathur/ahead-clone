@@ -1,12 +1,14 @@
 import Link from "next/link";
 import styles from "./header.module.scss";
+import Face6Icon from "@mui/icons-material/Face6";
 
 const Header = () => {
 	return (
 		<div className={styles.headerContainer}>
 			<div className={styles.headerContentCon}>
 				<div>
-					<button>DE</button>
+					<Face6Icon fontSize="large" />
+					{/* <button>DE</button> */}
 				</div>
 				<div>
 					<Link href="#">Emotions</Link>

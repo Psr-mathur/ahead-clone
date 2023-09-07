@@ -11,8 +11,10 @@
 			// DE , ahead con
 			text-align: center;
 			& > h1 {
-				padding: 15px;
-				background-color: plum;
+				// padding: 15px;
+				font-size: 75px;
+				// background-color: plum;
+				box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 				color: white;
 				font-weight: bold;
 			}

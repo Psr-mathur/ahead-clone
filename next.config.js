@@ -8,7 +8,7 @@ module.exports = withSass({
 
 const nextConfig = {
 	images: {
-		domains: ["www.freepnglogos.com"], // Add your desired domain(s) here
+		domains: ["www.freepnglogos.com", "ik.imagekit.io"], // Add your desired domain(s) here
 	},
 };
 

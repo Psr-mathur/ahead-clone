@@ -1,5 +1,11 @@
+@import "./global.scss";
 .homeContainer {
 	padding: 15px 50px;
+	@include tablet {
+	}
+	@include mobile {
+		padding: 15px;
+	}
 	.homeContentContainer {
 		.box_1 {
 			display: flex;
@@ -8,6 +14,14 @@
 			// border: 1px rgb(17, 0, 255) solid;
 			background-color: #eeeafd;
 			border-radius: 25px;
+			@include mobile {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			@include tablet {
+				flex-direction: column;
+			}
 			& > :nth-child(1) {
 				//left
 				// flex: 1;
@@ -18,6 +32,13 @@
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
+				@include tablet {
+					width: 100%;
+				}
+				@include mobile {
+					padding: 10px;
+					width: 100%;
+				}
 				& > p {
 					width: 100%;
 				}
@@ -81,6 +102,13 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				@include tablet {
+					width: 100%;
+				}
+				@include mobile {
+					width: 100%;
+					display: none;
+				}
 				& > div {
 					// circular div
 					padding: 40px;
@@ -91,6 +119,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					position: relative;
 					& > div {
 						padding: 25px;
 						height: calc(100% - 50px);
@@ -98,6 +127,25 @@
 						border-radius: 100%;
 						background-color: #dbd3f5;
 						// border: 1px red solid;
+						& > div {
+							position: absolute;
+							// background-color: #6341ef;
+							left: 32%;
+							top: 15%;
+							& > div {
+								position: absolute;
+								top: 10px;
+								left: 8px;
+								right: 8px;
+								height: 380px;
+								// bottom: 0;
+								border-radius: 10px;
+								overflow-y: scroll;
+								&::-webkit-scrollbar {
+									display: none;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -165,9 +213,15 @@
 			display: flex;
 			height: calc(100vh - 125px);
 			width: 100%;
-			background-color: #eeeafd;
+			background-color: #fcf6f0;
 			border-radius: 25px;
-			border: 1px greenyellow solid;
+			// border: 1px greenyellow solid;
+			@include mobile {
+				flex-direction: column;
+				height: max-content;
+				align-items: center;
+				justify-content: center;
+			}
 			& > div {
 				display: flex;
 				align-items: center;
@@ -177,13 +231,16 @@
 				// left
 				width: 50%;
 				padding: 25px;
+				@include mobile {
+					width: 100%;
+				}
 				& > div {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
 					gap: 20px;
-					border: 1px red solid;
+					// border: 1px red solid;
 					& > * {
 						width: 100%;
 					}
@@ -200,8 +257,24 @@
 					}
 					& > :last-child {
 						// floating circle
+						z-index: 2;
 						height: 40vh;
-						border: 1px plum solid;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						& > div {
+							height: 25vh;
+							width: 25vh;
+							border-radius: 50%;
+							border: 20px #f7f7f7 solid;
+							background-color: white;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							span {
+								font-size: 80px;
+							}
+						}
 					}
 				}
 			}
@@ -209,7 +282,10 @@
 				// right
 				width: 50%;
 				padding: 25px;
-				border: 1px red solid;
+				@include mobile {
+					width: 100%;
+				}
+				// border: 1px red solid;
 				& > div {
 					display: flex;
 					flex-direction: column;
@@ -217,9 +293,9 @@
 					justify-content: center;
 					gap: 25px;
 					max-width: 75%;
-					border: 1px red solid;
+					// border: 1px red solid;
 					P {
-						border: 1px red solid;
+						// border: 1px red solid;
 						width: 100%;
 						font-size: 16px;
 						line-height: 24px;
@@ -234,7 +310,11 @@
 			height: calc(100vh - 125px);
 			width: 100%;
 			border-radius: 25px;
-			border: 1px salmon solid;
+			// border: 1px salmon solid;
+			@include mobile {
+				max-height: 650px;
+			}
+
 			& > :first-child {
 				// header_para con
 				padding: 10px 8%;
@@ -249,6 +329,9 @@
 			& > :last-child {
 				// scroll_container
 				padding: 25px 20%;
+				@include mobile {
+					padding: 25px 20px;
+				}
 				// border: 1px rgb(17, 0, 255) solid;
 				.line {
 					width: 2px;
@@ -256,6 +339,9 @@
 					background-color: #7756fd;
 					position: absolute;
 					left: 23%;
+					@include mobile {
+						left: 50px;
+					}
 				}
 				.points {
 					position: relative;
@@ -264,7 +350,11 @@
 					overflow-y: scroll;
 					padding-left: 50px;
 					&::-webkit-scrollbar {
-						display: none;
+						// display: none;
+						width: 2px;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: #b8a6fd;
 					}
 					display: flex;
 					flex-direction: column;
@@ -280,20 +370,36 @@
 			width: 100%;
 			background-color: #ebf8fe;
 			border-radius: 25px;
-			border: 1px greenyellow solid;
+			// border: 1px greenyellow solid;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
 			gap: 20px;
+			@include mobile {
+				padding: 10px 0;
+				justify-content: center;
+			}
 			& > :first-child {
 				font-weight: 500;
+				@include mobile {
+					text-align: center;
+				}
 			}
 			& > :nth-child(2) {
 				// EverWondered...
 				word-spacing: 5px;
 				font-weight: bold;
 				font-size: 42px;
+				@include mobile {
+					font-size: 32px;
+					text-align: center;
+				}
+			}
+			& > :nth-child(3) {
+				@include mobile {
+					display: none;
+				}
 			}
 			& > :nth-child(3),
 			& > :nth-child(4) {
@@ -367,6 +473,9 @@
 			& > :nth-child(4) {
 				// colourful anonymus1,2 ..
 				padding: 0 25%;
+				@include mobile {
+					padding: 0 5px;
+				}
 				& > div {
 					padding: 100px 0;
 					background-color: white;
@@ -481,7 +590,7 @@
 		.box_9 {
 			height: calc(100vh - 150px);
 			padding: 0 50px;
-			border: 1px #40c3ff solid;
+			// border: 1px #40c3ff solid;
 			& > :first-child {
 				// header con
 				width: 100%;
@@ -506,7 +615,7 @@
 				max-height: calc(100vh - 275px);
 				& > :first-child {
 					// left part
-					border: 1px #6341ef solid;
+					// border: 1px #6341ef solid;
 					width: 60%;
 					display: flex;
 					flex-direction: column;
@@ -514,7 +623,7 @@
 					gap: 25px;
 					& > div {
 						max-width: 500px;
-						border: 1px red solid;
+						// border: 1px red solid;
 						padding: 20px;
 						& > :first-child {
 							// About, Product
@@ -531,7 +640,7 @@
 				}
 				& > :last-child {
 					// right part
-					border: 1px #6341ef solid;
+					// border: 1px #6341ef solid;
 					width: 40%;
 					& > div {
 						height: calc(100vh - 275px);
@@ -539,15 +648,26 @@
 						display: flex;
 						flex-direction: column;
 						align-items: center;
+						gap: 20px;
 						// justify-content: center;
 						overflow-y: scroll;
+						&::-webkit-scrollbar {
+							width: 5px;
+						}
+						&::-webkit-scrollbar-track {
+							background: transparent;
+						}
+						&::-webkit-scrollbar-thumb {
+							background: #b8a6fd; /* Color of the scrollbar handle */
+							border-radius: 5px; /* Rounded corners of the handle */
+						}
 					}
 				}
 			}
 		}
 		.box_10 {
 			padding: 50px;
-			border: 1px #6a47f8 solid;
+			// border: 1px #6a47f8 solid;
 			height: 400px;
 			& > :first-child {
 				// header con

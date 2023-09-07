@@ -380,9 +380,17 @@
 				padding: 10px 0;
 				justify-content: center;
 			}
+			@include tablet {
+				padding: 20px 0;
+				justify-content: center;
+				height: max-content;
+			}
 			& > :first-child {
 				font-weight: 500;
 				@include mobile {
+					text-align: center;
+				}
+				@include tablet {
 					text-align: center;
 				}
 			}
@@ -398,6 +406,9 @@
 			}
 			& > :nth-child(3) {
 				@include mobile {
+					display: none;
+				}
+				@include tablet {
 					display: none;
 				}
 			}
@@ -475,6 +486,9 @@
 				padding: 0 25%;
 				@include mobile {
 					padding: 0 5px;
+				}
+				@include tablet {
+					padding: 0 40px;
 				}
 				& > div {
 					padding: 100px 0;
@@ -591,6 +605,10 @@
 			height: calc(100vh - 150px);
 			padding: 0 50px;
 			// border: 1px #40c3ff solid;
+			@include mobile {
+				padding: 0 20px;
+				height: max-content;
+			}
 			& > :first-child {
 				// header con
 				width: 100%;
@@ -607,16 +625,27 @@
 					color: #6a47f8;
 					font-size: 42px;
 					font-weight: bold;
+					@include mobile {
+						display: none;
+					}
 				}
 			}
 			& > :last-child {
 				// content con
 				display: flex;
 				max-height: calc(100vh - 275px);
+				// border: 1px red solid;
+				@include mobile {
+					flex-direction: column;
+					max-height: max-content;
+				}
 				& > :first-child {
 					// left part
 					// border: 1px #6341ef solid;
 					width: 60%;
+					@include mobile {
+						width: 100%;
+					}
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
@@ -642,6 +671,9 @@
 					// right part
 					// border: 1px #6341ef solid;
 					width: 40%;
+					@include mobile {
+						width: 100%;
+					}
 					& > div {
 						height: calc(100vh - 275px);
 						padding: 20px;
@@ -669,6 +701,14 @@
 			padding: 50px;
 			// border: 1px #6a47f8 solid;
 			height: 400px;
+			@include mobile {
+				padding: 20px;
+				height: max-content;
+			}
+			@include tablet {
+				padding: 25px;
+				height: max-content;
+			}
 			& > :first-child {
 				// header con
 				padding-bottom: 50px;
@@ -681,7 +721,14 @@
 				display: flex;
 				align-items: flex-start;
 				justify-content: space-between;
-
+				@include mobile {
+					flex-direction: column;
+					gap: 15px;
+				}
+				@include tablet {
+					gap: 20px;
+					flex-wrap: wrap;
+				}
 				& > div {
 					display: flex;
 					flex-direction: column;
@@ -689,7 +736,7 @@
 					padding: 20px;
 					background-color: #fefbec;
 					border-radius: 16px;
-					transition: all 1s ease;
+					transition: all 500ms ease;
 					li {
 						font-size: 12px;
 					}
@@ -702,7 +749,11 @@
 						color: white;
 						cursor: pointer;
 						display: none;
+						@include mobile {
+							display: block;
+						}
 					}
+
 					&:hover {
 						background-color: #ffefd6;
 						transition: all 1s ease;

@@ -9,10 +9,10 @@ import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-	title: "ahead app",
-	description: "Created for density-exchange",
-};
+// export const metadata = {
+// 	title: "ahead app",
+// 	description: "Created for density-exchange",
+// };
 
 export default function RootLayout({ children }) {
 	useEffect(() => {

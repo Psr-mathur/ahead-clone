@@ -3,6 +3,8 @@ import styles from "./page.module.scss";
 import Image from "next/image";
 import Card from "@/components/card";
 import SIpoint from "@/components/sipoint";
+import Workwithuscard from "@/components/workwithuscard";
+import AppleIcon from "@mui/icons-material/Apple";
 
 const apple_img_url =
 	"https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png";
@@ -18,11 +20,7 @@ const Home = () => {
 						<div>
 							<div>
 								<div>
-									<Image
-										src={apple_img_url}
-										width="25"
-										height="25"
-									/>
+									<AppleIcon />
 								</div>
 								<div>
 									<span>Download on the</span>
@@ -162,6 +160,96 @@ const Home = () => {
 							<div></div>
 							<div></div>
 							<div></div>
+						</div>
+					</div>
+				</div>
+				<div className={styles.box_8}>
+					<p>We take privacy Seriously</p>
+					<p>Before you get started</p>
+					<p>
+						"We wont share your answers with anyone ( and won't ever
+						tell you which friend says what about you)"
+					</p>
+					<div>
+						<span>with love</span>
+						<span>Sign</span>
+					</div>
+					<button>Start a test</button>
+					<p>Take only 5 minutes</p>
+				</div>
+				<div className={styles.box_9}>
+					<div>
+						<p>Work with us</p>
+						<p>ahead</p>
+					</div>
+					<div>
+						<div>
+							<div>
+								<p>About</p>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Ea fugiat quisquam
+									delectus, eos ab eaque natus consectetur
+									voluptates fuga distinctio voluptatum
+									repellat ipsum veniam deleniti, temporibus
+									eius autem corrupti veritatis!
+								</p>
+							</div>
+							<div>
+								<p>Product</p>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Aperiam, expedita
+									doloremque quia quidem libero voluptatum
+									praesentium quod eveniet! Explicabo
+									voluptas, impedit hic laboriosam vel sint!
+									Optio pariatur qui unde ullam?
+								</p>
+							</div>
+						</div>
+						<div>
+							<div>
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+								<Workwithuscard />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className={styles.box_10}>
+					<div>
+						<h1>Open vacancies</h1>
+					</div>
+					<div>
+						<div>
+							<h4>Senior Full-stack Engineer</h4>
+							<li>Full-time position</li>
+							<li>Berlin or remote</li>
+							<li>CTC 12LPA 0.5-1% equity share options</li>
+							<button>See details</button>
+						</div>
+						<div>
+							<h4>Senior Designer</h4>
+							<li>Full-time position</li>
+							<li>Berlin or remote</li>
+							<li>CTC 12LPA 0.5-1% equity share options</li>
+							<button>See details</button>
+						</div>
+						<div>
+							<h4>Software Intern</h4>
+							<li>Full-time position</li>
+							<li>Berlin or remote</li>
+							<li>CTC 12LPA 0.5-1% equity share options</li>
+							<button>See details</button>
 						</div>
 					</div>
 				</div>

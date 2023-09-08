@@ -7,14 +7,78 @@
 }
 @media (max-width: 480px) {
   .header_headerContainer__7FCCW {
-    padding: 11px 10px;
+    padding: 11px 20px;
   }
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  transition: all 1s ease;
+}
+@media (max-width: 480px) {
+  .header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA {
+    display: flex;
+  }
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(1), .header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(2) {
+  color: greenyellow;
+  background-color: #7eaef3;
+  padding: 4px 6px;
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(1) {
+  color: black;
+  background-color: transparent;
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(3) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 25vw;
+  padding: 11px 20px;
+  background-color: #ddd9ed;
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(3) > :first-child {
+  padding: 4px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+  border-bottom: 1px lightslategray solid;
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(3) > :last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(3) > :last-child > :first-child {
+  padding-top: 25px;
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(3) > :last-child a {
+  text-decoration: none;
+  color: black;
+}
+.header_headerContainer__7FCCW .header_headerContentConMobile__VJ_pA > :nth-child(3) > :last-child button {
+  padding: 15px 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
 }
 .header_headerContainer__7FCCW .header_headerContentCon__ZP2Ij {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: white;
+}
+@media (max-width: 480px) {
+  .header_headerContainer__7FCCW .header_headerContentCon__ZP2Ij {
+    display: none;
+  }
 }
 .header_headerContainer__7FCCW .header_headerContentCon__ZP2Ij > :nth-child(1) {
   color: greenyellow;

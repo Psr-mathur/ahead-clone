@@ -15,7 +15,9 @@ button {
 	border: none;
 }
 header {
-	position: sticky;
+	position: fixed;
 	top: 0;
-	z-index: 100000;
+	left: 0;
+	right: 0;
+	z-index: 100;
 }

@@ -1,8 +1,8 @@
 @import "./global.scss";
 .homeContainer {
+	margin-top: 70px;
 	padding: 15px 50px;
-	@include tablet {
-	}
+
 	@include mobile {
 		padding: 15px;
 	}

@@ -5,7 +5,6 @@ import Card from "@/components/card";
 import SIpoint from "@/components/sipoint";
 import Workwithuscard from "@/components/workwithuscard";
 import AppleIcon from "@mui/icons-material/Apple";
-import "./global.scss";
 
 const phome_img_url =
 	"https://ik.imagekit.io/psrmathur/phone.png?updatedAt=1694077460049";

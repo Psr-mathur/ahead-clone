@@ -596,7 +596,7 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-/* * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -604,19 +604,26 @@ video {
 html,
 body {
 	max-width: 100vw;
-	overflow-x: hidden;
+	/* max-height: 100vh; */
 	font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
 		"Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
 		"Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-} */
-/* button {
+}
+button {
 	border: none;
 }
 header {
 	position: sticky;
 	top: 0;
 	z-index: 100000;
-} */
+}
+main {
+	overflow-x: hidden;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[13].use[5]!./src/app/global.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/footer.module.scss ***!

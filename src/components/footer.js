@@ -1,4 +1,3 @@
-import styles from "./footer.module.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -7,26 +6,32 @@ import Link from "next/link";
 const Footer = () => {
 	const apple_img_url = "";
 	return (
-		<div className={styles.footerCon}>
-			<div>
-				<div>
-					<h1>&#128125;</h1>
-					<span>ahead</span>
+		<div className=" p-24 pt-6 border-t border-[lightslategray]">
+			<div className="flex flex-col items-center justify-center gap-7">
+				<div className=" text-center">
+					<h1 className=" text-7xl py-1 shadow text-white font-bold">
+						&#128125;
+					</h1>
+					<span className=" text-2xl font-semibold text-[#775bf0]">
+						ahead
+					</span>
 				</div>
-				<div>
-					<div>
-						<LocationOnOutlinedIcon className={styles.loca} />
-						<span>Patna , Bihar</span>
+				<div className="flex flex-col sm:flex-row gap-6 sm:gap-52">
+					<div className="flex items-center justify-center gap-2">
+						<LocationOnOutlinedIcon className="text-blue-500" />
+						<span className=" text-sm">Patna , Bihar</span>
 					</div>
-					<div>
-						<EmailOutlinedIcon className={styles.email} />
-						<span>Prakashkrinida@outlook.com</span>
+					<div className="flex items-center justify-center gap-2">
+						<EmailOutlinedIcon className="text-blue-500" />
+						<span className=" text-sm">
+							Prakashkrinida@outlook.com
+						</span>
 					</div>
 				</div>
-				<Link href="https://github.com/Psr-mathur">
-					<div>
+				<Link className="" href="https://github.com/Psr-mathur">
+					<div className=" flex items-center justify-center gap-[6px] bg-black text-white rounded-[6px] py-[10px] px-4 cursor-pointer">
 						<GitHubIcon />
-						<span>Github</span>
+						<span className=" font-semibold">Github</span>
 					</div>
 				</Link>
 			</div>

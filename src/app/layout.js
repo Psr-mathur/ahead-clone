@@ -1,7 +1,6 @@
 "use client";
 import Header from "@/components/header";
 import "./globals.css";
-import "./global.scss";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
 import "aos/dist/aos.css";
@@ -19,16 +18,16 @@ export default function RootLayout({ children }) {
 	useEffect(() => {
 		AOS.init({
 			duration: 750,
-			anchorPlacement: "top-center",
+			anchorPlacement: "top-bottom",
 		});
 	}, []);
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<header>
+				<header className=" sticky top-0 z-50">
 					<Header />
 				</header>
-				<main>{children}</main>
+				<main className=" overflow-x-hidden">{children}</main>
 				<footer>
 					<Footer />
 				</footer>

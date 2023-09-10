@@ -8,7 +8,16 @@ module.exports = {
 		"./src/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			screens: {
+				md: "840px",
+			},
+		},
 	},
-	plugins: [],
+	plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
+	extend: {
+		spacing: {
+			2: "10px",
+		},
+	},
 };
